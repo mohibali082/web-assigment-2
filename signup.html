@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            font-size: 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            padding-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up!</h2>
+        <form onsubmit="return validateSignUp()">
+            <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+            <input type="number" id="age" name="age" placeholder="Age" required>
+            <select id="gender" name="gender" required>
+                <option value="">Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <textarea id="address" name="address" placeholder="Address" required></textarea>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
